@@ -6,7 +6,6 @@
 /*----------------------------------------------------------------------------*/
 
 #include "Robot.h"
-//comment to set up Build room pc
 #include <frc/commands/Scheduler.h>
 #include <frc/smartdashboard/SmartDashboard.h>
 
