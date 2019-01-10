@@ -9,7 +9,8 @@
 
 #include <frc/commands/Command.h>
 
-class ExampleCommand : public frc::Command {
+class ExampleCommand : public frc::Command
+{
  public:
   ExampleCommand();
   void Initialize() override;

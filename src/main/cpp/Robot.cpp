@@ -12,7 +12,8 @@
 ExampleSubsystem Robot::m_subsystem;
 OI Robot::m_oi;
 
-void Robot::RobotInit() {
+void Robot::RobotInit()
+{
   m_chooser.SetDefaultOption("Default Auto", &m_defaultAuto);
   m_chooser.AddOption("My Auto", &m_myAuto);
   frc::SmartDashboard::PutData("Auto Modes", &m_chooser);
@@ -26,16 +27,25 @@ void Robot::RobotInit() {
  * <p> This runs after the mode specific periodic functions, but before
  * LiveWindow and SmartDashboard integrated updating.
  */
-void Robot::RobotPeriodic() {}
+void Robot::RobotPeriodic()
+{
+
+}
 
 /**
  * This function is called once each time the robot enters Disabled mode. You
  * can use it to reset any subsystem information you want to clear when the
  * robot is disabled.
  */
-void Robot::DisabledInit() {}
+void Robot::DisabledInit()
+{
 
-void Robot::DisabledPeriodic() { frc::Scheduler::GetInstance()->Run(); }
+}
+
+void Robot::DisabledPeriodic()
+{
+  frc::Scheduler::GetInstance()->Run();
+}
 
 /**
  * This autonomous (along with the chooser code above) shows how to select
@@ -48,7 +58,9 @@ void Robot::DisabledPeriodic() { frc::Scheduler::GetInstance()->Run(); }
  * chooser code above (like the commented example) or additional comparisons to
  * the if-else structure below with additional strings & commands.
  */
-void Robot::AutonomousInit() {
+
+void Robot::AutonomousInit()
+{
   // std::string autoSelected = frc::SmartDashboard::GetString(
   //     "Auto Selector", "Default");
   // if (autoSelected == "My Auto") {
@@ -59,28 +71,43 @@ void Robot::AutonomousInit() {
 
   m_autonomousCommand = m_chooser.GetSelected();
 
-  if (m_autonomousCommand != nullptr) {
+  if (m_autonomousCommand != nullptr)
+  {
     m_autonomousCommand->Start();
   }
 }
 
-void Robot::AutonomousPeriodic() { frc::Scheduler::GetInstance()->Run(); }
+void Robot::AutonomousPeriodic()
+{
+  frc::Scheduler::GetInstance()->Run();
+}
 
-void Robot::TeleopInit() {
+void Robot::TeleopInit()
+{
   // This makes sure that the autonomous stops running when
   // teleop starts running. If you want the autonomous to
   // continue until interrupted by another command, remove
   // this line or comment it out.
-  if (m_autonomousCommand != nullptr) {
+  if (m_autonomousCommand != nullptr)
+  {
     m_autonomousCommand->Cancel();
     m_autonomousCommand = nullptr;
   }
 }
 
-void Robot::TeleopPeriodic() { frc::Scheduler::GetInstance()->Run(); }
+void Robot::TeleopPeriodic()
+{
+  frc::Scheduler::GetInstance()->Run();
+}
 
-void Robot::TestPeriodic() {}
+void Robot::TestPeriodic()
+{
+
+}
 
 #ifndef RUNNING_FRC_TESTS
-int main() { return frc::StartRobot<Robot>(); }
+int main()
+{
+  return frc::StartRobot<Robot>();
+}
 #endif

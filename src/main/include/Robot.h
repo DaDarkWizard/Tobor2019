@@ -6,7 +6,7 @@
 /*----------------------------------------------------------------------------*/
 
 #pragma once
-//This is a message two
+
 #include <frc/TimedRobot.h>
 #include <frc/commands/Command.h>
 #include <frc/smartdashboard/SendableChooser.h>
@@ -16,8 +16,8 @@
 #include "commands/MyAutoCommand.h"
 #include "subsystems/ExampleSubsystem.h"
 
-//This is a new line
-class Robot : public frc::TimedRobot {
+class Robot : public frc::TimedRobot
+{
  public:
   static ExampleSubsystem m_subsystem;
   static OI m_oi;

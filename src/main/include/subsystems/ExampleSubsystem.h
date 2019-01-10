@@ -9,7 +9,8 @@
 
 #include <frc/commands/Subsystem.h>
 
-class ExampleSubsystem : public frc::Subsystem {
+class ExampleSubsystem : public frc::Subsystem
+{
  public:
   ExampleSubsystem();
   void InitDefaultCommand() override;
@@ -18,4 +19,3 @@ class ExampleSubsystem : public frc::Subsystem {
   // It's desirable that everything possible under private except
   // for methods that implement subsystem capabilities
 };
-//boop
