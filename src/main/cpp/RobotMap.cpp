@@ -6,8 +6,8 @@ std::shared_ptr<WPI_TalonSRX> RobotMap::Talon2;
 std::shared_ptr<WPI_TalonSRX> RobotMap::Talon3;
 std::shared_ptr<WPI_TalonSRX> RobotMap::Talon4;
 
-std::shared_ptr<WPI_TalonSRX> RobotMap::Mecanums;
-//hi
+std::shared_ptr<MecanumDrive> RobotMap::Mecanums;
+
 void RobotMap::Init()
 {
     Talon1.reset(new WPI_TalonSRX(1));
@@ -20,5 +20,8 @@ void RobotMap::Init()
     Talon3->SetInverted(true);
     Talon4->SetInverted(true);
 
-    //Talon1->
+    Mecanums.reset(new MecanumDrive(*Talon4,*Talon3,*Talon2,*Talon1));
+    Mecanums->SetSafetyEnabled(true);
+    Mecanums->SetExpiration(0.1);
+    Mecanums->SetMaxOutput(1.0);
 }
