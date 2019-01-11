@@ -9,7 +9,8 @@
 
 #include <frc/commands/Command.h>
 
-class MyAutoCommand : public frc::Command {
+class MyAutoCommand : public frc::Command
+{
  public:
   MyAutoCommand();
   void Initialize() override;

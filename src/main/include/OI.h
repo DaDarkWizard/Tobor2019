@@ -7,8 +7,8 @@
 
 #pragma once
 
-class OI {
+class OI
+{
  public:
   OI();
 };
-//this is oi.h
