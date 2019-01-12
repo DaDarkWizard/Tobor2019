@@ -10,8 +10,8 @@ class OI
     frc::Joystick yoke{0};
     frc::Joystick xbox{1};
     frc::Joystickbutton xboxRB{&xbox, 6};
-
     frc::Joystick xboxbuttonLB{&xbox, 5};
+    
 public:
 
 
