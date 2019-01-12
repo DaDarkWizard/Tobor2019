@@ -24,4 +24,7 @@ void RobotMap::Init()
     Mecanums->SetSafetyEnabled(true);
     Mecanums->SetExpiration(0.1);
     Mecanums->SetMaxOutput(1.0);
+
+    Victor1.reset(new VictorSP(1));
+    Victor2.reset(new VictorSP(2));
 }

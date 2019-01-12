@@ -3,6 +3,8 @@
 
 #include <WPILib.h>
 
+#include <ctre/Phoenix.h>
+
 class RobotMap 
 {
 public:
@@ -17,4 +19,7 @@ public:
     static std::shared_ptr<WPI_TalonSRX> Talon4;
 
     static std::shared_ptr<frc::MecanumDrive> Mecanums;
+
+    static std::shared_ptr<VictorSP> Victor1;
+    static std::shared_ptr<VictorSP> Victor2;
 };
