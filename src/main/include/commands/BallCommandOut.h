@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> f3a76b32d9fe01b865c3e2021f4913057de00cf7
 #pragma once
 
 #include <frc/commands/Command.h>
