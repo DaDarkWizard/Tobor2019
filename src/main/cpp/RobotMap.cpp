@@ -6,6 +6,10 @@ std::shared_ptr<WPI_TalonSRX> RobotMap::Talon2;
 std::shared_ptr<WPI_TalonSRX> RobotMap::Talon3;
 std::shared_ptr<WPI_TalonSRX> RobotMap::Talon4;
 
+std::shared_ptr<VictorSP> RobotMap::Victor1
+std::shared_ptr<VictorSP> RobotMap::Victor2
+
+
 std::shared_ptr<MecanumDrive> RobotMap::Mecanums;
 
 void RobotMap::Init()
@@ -25,6 +29,6 @@ void RobotMap::Init()
     Mecanums->SetExpiration(0.1);
     Mecanums->SetMaxOutput(1.0);
 
-    Victor1.reset(new VictorSP(1));
-    Victor2.reset(new VictorSP(2));
+    Victor1.reset(new VictorSP(0));
+    Victor2.reset(new VictorSP(1));
 }
