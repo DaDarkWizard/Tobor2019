@@ -7,10 +7,12 @@
 
 #include "../subsystems/DriveTrain.h"
 
+#include <OI.h>
+
 class MecanumDrive : public frc::Command 
 {
  public:
- 
+
   MecanumDrive();
   void Initialize() override;
   void Execute() override;
