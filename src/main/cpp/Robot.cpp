@@ -6,6 +6,8 @@
 ExampleSubsystem Robot::m_subsystem;
 DriveTrain Robot::driveTrain;
 
+BallControl Robot::ballControl;
+
 OI Robot::m_oi;
 
 

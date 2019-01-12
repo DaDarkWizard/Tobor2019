@@ -12,12 +12,16 @@
 #include "subsystems/ExampleSubsystem.h"
 #include "subsystems/DriveTrain.h"
 
+#include "subsystems/BallControl.h"
+
 class Robot : public frc::TimedRobot
 {
  public:
   
   static ExampleSubsystem m_subsystem;
   static DriveTrain driveTrain;
+
+  static BallControl ballControl;
 
   static OI m_oi;
 
