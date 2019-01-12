@@ -9,8 +9,6 @@
 
 class DriveTrain : public frc::Subsystem 
 {
- private:
-
  public:
 
   void MecanumDrive(double X, double Y, double Twist);

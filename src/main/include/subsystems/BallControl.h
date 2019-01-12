@@ -7,8 +7,6 @@
 
 class BallControl : public frc::Subsystem 
 {
- private:
-
  public:
   
   BallControl();

@@ -1,4 +1,5 @@
-plugins {
+plugins 
+{
     id "cpp"
     id "google-test-test-suite"
     id "edu.wpi.first.GradleRIO" version "2019.1.1"
@@ -6,9 +7,12 @@ plugins {
 
 // Define my targets (RoboRIO) and artifacts (deployable files)
 // This is added by GradleRIO's backing project EmbeddedTools.
-deploy {
-    targets {
-        roboRIO("roborio") {
+deploy 
+{
+    targets 
+    {
+        roboRIO("roborio") 
+        {
             // Team number is loaded either from the .wpilib/wpilib_preferences.json
             // or from command line. If not found an exception will be thrown.
             // You can use getTeamOrDefault(team) instead of getTeamNumber if you
@@ -16,15 +20,18 @@ deploy {
             team = frc.getTeamNumber()
         }
     }
-    artifacts {
-        frcNativeArtifact('frcCpp') {
+    artifacts 
+    {
+        frcNativeArtifact('frcCpp') 
+        {
             targets << "roborio"
             component = 'frcUserProgram'
             // Debug can be overridden by command line, for use with VSCode
             debug = frc.getDebugOrDefault(false)
         }
         // Built in artifact to deploy arbitrary files to the roboRIO.
-        fileTreeArtifact('frcStaticFileDeploy') {
+        fileTreeArtifact('frcStaticFileDeploy') 
+        {
             // The directory below is the local directory to deploy
             files = fileTree(dir: 'src/main/deploy')
             // Deploy to RoboRIO target, into /home/lvuser/deploy
@@ -43,22 +50,30 @@ def includeSrcInIncludeRoot = false
 // Set this to true to enable desktop support.
 def includeDesktopSupport = false
 
-model {
-    components {
-        frcUserProgram(NativeExecutableSpec) {
+model 
+{
+    components 
+    {
+        frcUserProgram(NativeExecutableSpec) 
+        {
             targetPlatform wpi.platforms.roborio
-            if (includeDesktopSupport) {
+            if (includeDesktopSupport) 
+            {
                 targetPlatform wpi.platforms.desktop
             }
 
-            sources.cpp {
-                source {
+            sources.cpp 
+            {
+                source 
+                {
                     srcDir 'src/main/cpp'
                     include '**/*.cpp', '**/*.cc'
                 }
-                exportedHeaders {
+                exportedHeaders 
+                {
                     srcDir 'src/main/include'
-                    if (includeSrcInIncludeRoot) {
+                    if (includeSrcInIncludeRoot) 
+                    {
                         srcDir 'src/main/cpp'
                     }
                 }
@@ -69,12 +84,16 @@ model {
             wpi.deps.vendor.cpp(it)
         }
     }
-    testSuites {
-        frcUserProgramTest(GoogleTestTestSuiteSpec) {
+    testSuites 
+    {
+        frcUserProgramTest(GoogleTestTestSuiteSpec) 
+        {
             testing $.components.frcUserProgram
 
-            sources.cpp {
-                source {
+            sources.cpp 
+            {
+                source 
+                {
                     srcDir 'src/test/cpp'
                     include '**/*.cpp'
                 }
