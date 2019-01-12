@@ -1,18 +1,21 @@
-/*----------------------------------------------------------------------------*/
-/* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
-/* Open Source Software - may be modified and shared by FRC teams. The code   */
-/* must be accompanied by the FIRST BSD license file in the root directory of */
-/* the project.                                                               */
-/*----------------------------------------------------------------------------*/
-
 #include "subsystems/BallControl.h"
 
-BallControl::BallControl() : Subsystem("ExampleSubsystem") {}
+BallControl::BallControl() : Subsystem("ExampleSubsystem") 
+{
 
-void BallControl::InitDefaultCommand() {
-  // Set the default command for a subsystem here.
-  // SetDefaultCommand(new MySpecialCommand());
 }
 
-// Put methods for controlling this subsystem
-// here. Call these from Commands.
+void BallControl::InitDefaultCommand() 
+{
+  
+}
+
+void StopVictor1()
+{
+  RobotMap::Victor1->Set(0);
+}
+
+void Victor1(double speed)
+{
+  RobotMap::Victor1->Set(speed);
+}
