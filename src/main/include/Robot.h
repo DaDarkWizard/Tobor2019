@@ -8,10 +8,11 @@
 #include "OI.h"
 #include "commands/ExampleCommand.h"
 #include "commands/MyAutoCommand.h"
+#include "commands/BallCommandIn.h"
+#include "commands/BallCommandOut.h"
 
 #include "subsystems/ExampleSubsystem.h"
 #include "subsystems/DriveTrain.h"
-
 #include "subsystems/BallControl.h"
 
 class Robot : public frc::TimedRobot

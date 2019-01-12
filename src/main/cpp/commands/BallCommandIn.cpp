@@ -12,18 +12,28 @@ BallCommandIn::BallCommandIn() {
   // eg. Requires(Robot::chassis.get());
 }
 
-// Called just before this Command runs the first time
-void BallCommandIn::Initialize() {}
 
-// Called repeatedly when this Command is scheduled to run
-void BallCommandIn::Execute() {}
+void BallCommandIn::Initialize() 
+{
 
-// Make this return true when this Command no longer needs to run execute()
-bool BallCommandIn::IsFinished() { return false; }
+}
 
-// Called once after isFinished returns true
-void BallCommandIn::End() {}
+void BallCommandIn::Execute() 
+{
+  Robot::ballControl->Victor1(0.25);
+}
 
-// Called when another command which requires one or more of the same
-// subsystems is scheduled to run
-void BallCommandIn::Interrupted() {}
+bool BallCommandIn::IsFinished() 
+{ 
+  return false; 
+}
+
+void BallCommandIn::End() 
+{
+  Robot::ballControl->StopVictor1();
+}
+
+void BallCommandIn::Interrupted() 
+{
+  End();
+}
