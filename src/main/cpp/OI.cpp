@@ -7,8 +7,8 @@ OI::OI()
 {
     Joystick yoke{0};
     Joystick xbox{1};
-    //xboxRB.WhenPressed();
-    //xboxLB.WhenPressed();
+    xboxRB.toggleWhenPressed(new BallCommandIn);
+    xboxLB.toggleWhenPressed(new BallCommandOut);
 }
 
 double OI::XboxVertL()

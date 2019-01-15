@@ -1,38 +1,32 @@
+
 #include "commands/BallCommandOut.h"
 
-BallCommandOut::BallCommandOut() {
-  // Use Requires() here to declare subsystem dependencies
-  // eg. Requires(Robot::chassis.get());
+BallCommandOut::BallCommandOut()
+{
   Requires(Robot::ballControl.get());
 }
 
-// Called just before this Command runs the first time
 void BallCommandOut::Initialize() 
 {
 
 }
 
-// Called repeatedly when this Command is scheduled to run
 void BallCommandOut::Execute() 
 {
-  Robot::ballControl->
+  Robot::ballControl->Victor1(1);
 }
 
-// Make this return true when this Command no longer needs to run execute()
 bool BallCommandOut::IsFinished() 
-{
+{ 
   return false; 
 }
 
-// Called once after isFinished returns true
 void BallCommandOut::End() 
 {
-
+  Robot::ballControl->StopVictor1();
 }
 
-// Called when another command which requires one or more of the same
-// subsystems is scheduled to run
 void BallCommandOut::Interrupted() 
 {
-
+  End();
 }

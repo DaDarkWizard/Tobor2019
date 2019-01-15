@@ -1,16 +1,18 @@
-/*----------------------------------------------------------------------------*/
-/* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
-/* Open Source Software - may be modified and shared by FRC teams. The code   */
-/* must be accompanied by the FIRST BSD license file in the root directory of */
-/* the project.                                                               */
-/*----------------------------------------------------------------------------*/
 
 #pragma once
 
 #include <frc/commands/Command.h>
 
-class BallCommandIn : public frc::Command {
+#include <WPILib.h>
+
+#include "../subsystems/BallControl.h"
+
+#include <OI.h>
+
+class BallCommandIn : public frc::Command 
+{
  public:
+  
   BallCommandIn();
   void Initialize() override;
   void Execute() override;

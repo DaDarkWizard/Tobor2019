@@ -8,10 +8,11 @@
 #include "OI.h"
 #include "commands/ExampleCommand.h"
 #include "commands/MyAutoCommand.h"
+#include "commands/BallCommandIn.h"
+#include "commands/BallCommandOut.h"
 
 #include "subsystems/ExampleSubsystem.h"
 #include "subsystems/DriveTrain.h"
-
 #include "subsystems/BallControl.h"
 
 class Robot : public frc::TimedRobot
@@ -37,8 +38,6 @@ class Robot : public frc::TimedRobot
 
  private:
   
-  // Have it null by default so that if testing teleop it
-  // doesn't have undefined behavior and potentially crash.
   frc::Command* m_autonomousCommand = nullptr;
   ExampleCommand m_defaultAuto;
   MyAutoCommand m_myAuto;
