@@ -9,6 +9,9 @@
 
 #include <frc/commands/Command.h>
 #include <wpilib.h>
+#include <OI.h>
+#include "../subsystem/TowerRock.h"
+
 class ComTowerOut : public frc::Command {
  public:
   ComTowerOut();

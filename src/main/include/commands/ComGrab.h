@@ -9,6 +9,9 @@
 
 #include <frc/commands/Command.h>
 #include <wpilib.h>
+#include <OI.h>
+#include "../subsystem/Grabber.h "
+
 class ComGrab : public frc::Command {
  public:
   ComGrab();
