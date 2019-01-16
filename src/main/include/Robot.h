@@ -21,8 +21,8 @@ class Robot : public frc::TimedRobot
   
   static ExampleSubsystem m_subsystem;
   static DriveTrain driveTrain;
-
   static BallControl ballControl;
+  static Elevator elevator;
 
   static OI m_oi;
 
