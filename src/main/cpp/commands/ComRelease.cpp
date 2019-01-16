@@ -7,23 +7,39 @@
 
 #include "commands/ComRelease.h"
 
-ComRelease::ComRelease() {
+ComRelease::ComRelease() 
+{
   // Use Requires() here to declare subsystem dependencies
   // eg. Requires(Robot::chassis.get());
 }
 
 // Called just before this Command runs the first time
-void ComRelease::Initialize() {}
+void ComRelease::Initialize() 
+{
+  Robot::grabber->Release();
+}
 
 // Called repeatedly when this Command is scheduled to run
-void ComRelease::Execute() {}
+void ComRelease::Execute() 
+{
+
+}
 
 // Make this return true when this Command no longer needs to run execute()
-bool ComRelease::IsFinished() { return false; }
+bool ComRelease::IsFinished() 
+{
+  return true; 
+}
 
 // Called once after isFinished returns true
-void ComRelease::End() {}
+void ComRelease::End() 
+{
+
+}
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
-void ComRelease::Interrupted() {}
+void ComRelease::Interrupted() 
+{
+  End();
+}
