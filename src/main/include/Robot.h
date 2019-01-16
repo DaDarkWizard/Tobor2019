@@ -24,12 +24,13 @@ class Robot : public frc::TimedRobot
   
   static ExampleSubsystem m_subsystem;
   static DriveTrain driveTrain;
-
   static BallControl ballControl;
   static Grabber grabber;
   static Pusher pusher;
   static TowerRock towerrock;
   
+  static Elevator elevator;
+
   static OI m_oi;
 
   void RobotInit() override;
