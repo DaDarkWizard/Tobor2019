@@ -13,7 +13,10 @@ ComGrab::ComGrab() {
 }
 
 // Called just before this Command runs the first time
-void ComGrab::Initialize() {}
+void ComGrab::Initialize() 
+{
+  
+}
 
 // Called repeatedly when this Command is scheduled to run
 void ComGrab::Execute() {}

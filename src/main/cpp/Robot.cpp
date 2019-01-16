@@ -9,6 +9,9 @@ ExampleSubsystem Robot::m_subsystem;
 DriveTrain Robot::driveTrain;
 
 BallControl Robot::ballControl;
+Grabber Robot::grabber;
+Pusher Robot::pusher;
+TowerRock::towerrock;
 
 OI Robot::m_oi;
 
