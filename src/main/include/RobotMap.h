@@ -20,4 +20,11 @@ public:
 
     static std::shared_ptr<VictorSP> Victor1;
     static std::shared_ptr<VictorSP> Victor2;
+
+    static std::shared_ptr<frc::Solenoid> TowerIn;
+    static std::shared_ptr<frc::Solenoid> TowerOut;
+    static std::shared_ptr<frc::Solenoid> Push;
+    static std::shared_ptr<frc::Solenoid> Pull;
+    static std::shared_ptr<frc::Solenoid> Grab;
+    static std::shared_ptr<frc::Solenoid> Release;
 };
