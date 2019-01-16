@@ -17,4 +17,7 @@ class TowerRock : public frc::Subsystem {
  public:
   TowerRock();
   void InitDefaultCommand() override;
+
+  void TowerOut();
+  void TowerIn();
 };

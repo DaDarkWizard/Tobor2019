@@ -16,3 +16,13 @@ void Grabber::InitDefaultCommand() {
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
+
+void Grabber::Grab()
+{
+	RobotMap::Grab->StartPulse();
+}
+
+void Grabber::Release()
+{
+	RobotMap::Release->StartPulse();
+}

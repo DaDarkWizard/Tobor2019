@@ -5,24 +5,16 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "subsystems/Pusher.h"
+#pragma once
 
-Pusher::Pusher() : Subsystem("ExampleSubsystem") {}
+#include <frc/commands/Command.h>
 
-void Pusher::InitDefaultCommand() {
-  // Set the default command for a subsystem here.
-  // SetDefaultCommand(new MySpecialCommand());
-}
-
-// Put methods for controlling this subsystem
-// here. Call these from Commands.
-
-void Pusher::Push()
-{
-	RobotMap::Push->StartPulse();
-}
-
-void Pusher::Pull()
-{
-	RobotMap::Pull->StartPulse();
-}
+class ComTowerOut : public frc::Command {
+ public:
+  ComTowerOut();
+  void Initialize() override;
+  void Execute() override;
+  bool IsFinished() override;
+  void End() override;
+  void Interrupted() override;
+};

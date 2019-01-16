@@ -16,3 +16,13 @@ void TowerRock::InitDefaultCommand() {
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
+
+void TowerRock::TowerOut()
+{
+  RobotMap::TowerOut->StartPulse();
+}
+
+void TowerRock::TowerIn()
+{
+  RobotMap::TowerIn->StartPulse();
+}
