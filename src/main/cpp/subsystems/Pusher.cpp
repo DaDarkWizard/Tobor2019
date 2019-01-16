@@ -16,3 +16,13 @@ void Pusher::InitDefaultCommand() {
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
+
+void Pusher::Push()
+{
+	RobotMap::Push->StartPulse();
+}
+
+void Pusher::Pull()
+{
+	RobotMap::Pull->StartPulse();
+}
