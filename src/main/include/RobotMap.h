@@ -20,4 +20,11 @@ public:
 
     static std::shared_ptr<VictorSP> Victor1;
     static std::shared_ptr<VictorSP> Victor2;
+
+    static std::shared_ptr<
+    static std::shared_ptr<
+    static std::shared_ptr<
+    static std::shared_ptr<
+    static std::shared_ptr<
+    static std::shared_ptr<
 };
