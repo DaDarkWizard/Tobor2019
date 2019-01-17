@@ -1,5 +1,5 @@
 
-#include "commands/BallCommandIn.h"
+#include <BallCommandIn.h>
 
 BallCommandIn::BallCommandIn()
 {

@@ -5,7 +5,7 @@
 
 #include <OI.h>
 
-#include "../subsystem/BallControl.h"
+#include "../subsystems/BallControl.h"
 
 #include <OI.h>
 
