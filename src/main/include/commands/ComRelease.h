@@ -9,6 +9,8 @@
 
 #include "../subsystems/Grabber.h"
 
+#include <Robot.h>
+
 class ComRelease : public frc::Command 
 {
  public:

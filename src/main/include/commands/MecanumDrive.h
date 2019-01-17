@@ -9,6 +9,8 @@
 
 #include <OI.h>
 
+#include <Robot.h>
+
 class MecanumDrive : public frc::Command 
 {
  public:
