@@ -3,12 +3,12 @@
 
 ComTowerIn::ComTowerIn() 
 {
-  // eg. Requires(Robot::chassis.get());
+  Requires(&Robot::towerRock);
 }
 
 void ComTowerIn::Initialize() 
 {
-  Robot::towerRock->TowerIn();
+  &Robot::towerRock->TowerIn();
 }
 
 void ComTowerIn::Execute() 

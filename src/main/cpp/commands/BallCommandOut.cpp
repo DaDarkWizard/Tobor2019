@@ -3,7 +3,7 @@
 
 BallCommandOut::BallCommandOut()
 {
-  Requires(Robot::ballControl.get());
+  Requires(&Robot::ballControl;
 }
 
 void BallCommandOut::Initialize() 
@@ -13,7 +13,7 @@ void BallCommandOut::Initialize()
 
 void BallCommandOut::Execute() 
 {
-  Robot::ballControl->Victor1(1);
+  &Robot::ballControl->Victor1(1);
 }
 
 bool BallCommandOut::IsFinished() 
@@ -23,7 +23,7 @@ bool BallCommandOut::IsFinished()
 
 void BallCommandOut::End() 
 {
-  Robot::ballControl->StopVictor1();
+  &Robot::ballControl->StopVictor1();
 }
 
 void BallCommandOut::Interrupted() 
