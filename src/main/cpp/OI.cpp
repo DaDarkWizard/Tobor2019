@@ -38,10 +38,10 @@ double OI::YokeVert()
 
 double OI::YokeHorz()
 {
-    return xbox.GetRawAxis(0);
+    return yoke.GetRawAxis(0);
 }
 
 double OI::YokeWheel()
 {
-    return (xbox.GetRawAxis(2) * -1);
+    return (yoke.GetRawAxis(2) * -1);
 }

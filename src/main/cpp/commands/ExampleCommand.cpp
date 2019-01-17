@@ -30,5 +30,5 @@ void ExampleCommand::End()
 
 void ExampleCommand::Interrupted()
 {
-  
+  End();
 }
