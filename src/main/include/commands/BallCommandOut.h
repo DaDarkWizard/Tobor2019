@@ -4,9 +4,6 @@
 #include <frc/commands/Command.h>
 
 #include "../subsystems/BallControl.h"
-#include <OI.h>
-
-#include "../subsystem/BallControl.h"
 
 #include <OI.h>
 
