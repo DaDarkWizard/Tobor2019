@@ -15,8 +15,8 @@ class OI
     
     frc::Joystick xbox{1};
     
-    frc::Joystickbutton xboxRB{&xbox, 6};
-    frc::Joystick xboxLB{&xbox, 5};
+    frc::JoystickButton xboxRB{&xbox, 6};
+    frc::JoystickButton xboxLB{&xbox, 5};
     
 public:
 

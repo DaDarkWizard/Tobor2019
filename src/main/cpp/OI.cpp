@@ -5,8 +5,8 @@
 
 OI::OI()
 {
-    Joystick yoke{0};
-    Joystick xbox{1};
+    frc::Joystick yoke{0};
+    frc::Joystick xbox{1};
     xboxRB.toggleWhenPressed(new BallCommandIn);
     xboxLB.toggleWhenPressed(new BallCommandOut);
 }
