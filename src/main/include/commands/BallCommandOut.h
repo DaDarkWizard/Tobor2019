@@ -3,6 +3,8 @@
 
 #include <frc/commands/Command.h>
 
+#include <OI.h>
+
 #include "../subsystems/BallControl.h"
 
 #include <OI.h>
