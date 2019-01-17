@@ -23,7 +23,7 @@ bool BallCommandOut::IsFinished()
 
 void BallCommandOut::End() 
 {
-  Robot::ballControl->StopVictor1();
+  &Robot::ballControl->StopVictor1();
 }
 
 void BallCommandOut::Interrupted() 
