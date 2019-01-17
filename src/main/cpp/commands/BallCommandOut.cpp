@@ -3,7 +3,7 @@
 
 BallCommandOut::BallCommandOut()
 {
-  Requires(&Robot::ballControl;
+  Requires(&Robot::ballControl);
 }
 
 void BallCommandOut::Initialize() 
