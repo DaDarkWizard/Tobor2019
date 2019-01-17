@@ -13,7 +13,14 @@ void Elevate::Initialize()
 
 void Elevate::Execute() 
 {
-  Robot::elevate->Victor2(Robot::m_oi->YokeVert());
+  if ((Robot::m_oi->YokeVert() <= 0.1) && (Robot::m_ot->YokeVert() => -0.1))
+  {
+    Robot::elevate->Victor2(0.05);
+  }
+  else
+  {
+    Robot::elevate->Victor2(Robot::m_oi->YokeVert());
+  }
 }
 
 bool Elevate::IsFinished() 
@@ -30,11 +37,7 @@ void Elevate::Interrupted()
 {
   End();
 }
-
-void Elevate::SmallTilt()
-{
   if Robot::m_oi->YokeVert() => 0.1
   {
     Robot::elevate->Victor2(0.05);
   }
-}
