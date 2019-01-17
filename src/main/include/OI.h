@@ -19,7 +19,7 @@ class OI
     frc::JoystickButton xboxLB{&xbox, 5};
     
 public:
-
+    OI();
 
     double XboxVertL();
     double XboxHorzL();
@@ -30,5 +30,5 @@ public:
     double YokeHorz();
     double YokeWheel();
 
-    OI();
+
 };

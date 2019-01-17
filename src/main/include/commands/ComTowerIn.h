@@ -9,6 +9,8 @@
 
 #include "../subsystems/TowerRock.h"
 
+#include <Robot.h>
+
 class ComTowerIn : public frc::Command 
 {
  public:

@@ -7,7 +7,8 @@
 
 #include <OI.h>
 
-#include "../subsystems/Grabber.h "
+#include "../subsystems/Grabber.h"
+#include <Robot.h>
 
 class ComGrab : public frc::Command 
 {

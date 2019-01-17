@@ -9,6 +9,8 @@
 
 #include <OI.h>
 
+#include <Robot.h>
+
 class BallCommandIn : public frc::Command 
 {
  public:

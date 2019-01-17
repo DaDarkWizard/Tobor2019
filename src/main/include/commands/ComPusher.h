@@ -9,6 +9,8 @@
 
 #include "../subsystems/Pusher.h"
 
+#include <Robot.h>
+
 class ComPusher : public frc::Command 
 {
  public:

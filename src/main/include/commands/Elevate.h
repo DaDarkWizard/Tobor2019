@@ -9,6 +9,8 @@
 
 #include <../subsystems/Elevator.h>
 
+#include <Robot.h>
+
 class Elevate : public frc::Command 
 {
  public:

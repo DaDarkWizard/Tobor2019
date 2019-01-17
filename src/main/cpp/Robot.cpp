@@ -7,11 +7,11 @@
 
 ExampleSubsystem Robot::m_subsystem;
 DriveTrain Robot::driveTrain;
-
 BallControl Robot::ballControl;
 Grabber Robot::grabber;
 Pusher Robot::pusher;
-TowerRock Robot::towerrock;
+TowerRock Robot::towerRock;
+Elevator Robot::elevator;
 
 OI Robot::m_oi;
 
