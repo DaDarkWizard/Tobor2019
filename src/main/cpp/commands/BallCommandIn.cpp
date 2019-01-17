@@ -14,7 +14,7 @@ void BallCommandIn::Initialize()
 
 void BallCommandIn::Execute() 
 {
-  Robot::ballControl->Victor1(0.25);
+  &Robot::ballControl->Victor1(0.25);
 }
 
 bool BallCommandIn::IsFinished() 
