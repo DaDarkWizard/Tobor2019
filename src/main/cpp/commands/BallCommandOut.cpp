@@ -13,7 +13,7 @@ void BallCommandOut::Initialize()
 
 void BallCommandOut::Execute() 
 {
-  Robot::ballControl->Victor1(1);
+  &Robot::ballControl->Victor1(1);
 }
 
 bool BallCommandOut::IsFinished() 

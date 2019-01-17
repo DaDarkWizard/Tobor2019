@@ -8,7 +8,7 @@ ComRelease::ComRelease()
 
 void ComRelease::Initialize() 
 {
-  Robot::grabber->Release();
+  &Robot::grabber->Release();
 }
 
 void ComRelease::Execute() 
