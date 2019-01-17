@@ -4,6 +4,7 @@
 BallCommandIn::BallCommandIn()
 {
   //Requires(Robot::ballControl.get);
+  Requires(&Robot::ballControl);
 }
 
 void BallCommandIn::Initialize() 
