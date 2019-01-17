@@ -31,12 +31,12 @@ void RobotMap::Init()
     Victor1.reset(new frc::VictorSP(0));
     Victor2.reset(new frc::VictorSP(1));
 
-    TowerOut.reset(new Solenoid(0));
-	TowerIn.reset(new Solenoid(1));
-	Grab.reset(new Solenoid(2));
-	Release.reset(new Solenoid(3));
-	Push.reset(new Solenoid(4));
-	Pull.reset(new Solenoid(5));
+    TowerOut.reset(new frc::Solenoid(0));
+	TowerIn.reset(new frc::Solenoid(1));
+	Grab.reset(new frc::Solenoid(2));
+	Release.reset(new frc::Solenoid(3));
+	Push.reset(new frc::Solenoid(4));
+	Pull.reset(new frc::Solenoid(5));
 
     TowerOut->SetPulseDuration(.1);
 	TowerIn->SetPulseDuration(.1);
