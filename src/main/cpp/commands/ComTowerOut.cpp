@@ -7,23 +7,39 @@
 
 #include "commands/ComTowerOut.h"
 
-ComTowerOut::ComTowerOut() {
+ComTowerOut::ComTowerOut() 
+{
   // Use Requires() here to declare subsystem dependencies
   // eg. Requires(Robot::chassis.get());
 }
 
 // Called just before this Command runs the first time
-void ComTowerOut::Initialize() {}
+void ComTowerOut::Initialize() 
+{
+  Robot::towerrock->TowerOut();
+}
 
 // Called repeatedly when this Command is scheduled to run
-void ComTowerOut::Execute() {}
+void ComTowerOut::Execute() 
+{
+
+}
 
 // Make this return true when this Command no longer needs to run execute()
-bool ComTowerOut::IsFinished() { return false; }
+bool ComTowerOut::IsFinished() 
+{
+  return true; 
+}
 
 // Called once after isFinished returns true
-void ComTowerOut::End() {}
+void ComTowerOut::End() 
+{
+
+}
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
-void ComTowerOut::Interrupted() {}
+void ComTowerOut::Interrupted() 
+{
+  End();
+}

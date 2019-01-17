@@ -8,6 +8,9 @@
 #pragma once
 
 #include <frc/commands/Command.h>
+#include <wpilib.h>
+#include <OI.h>
+#include "../subsystem/Pusher.h"
 
 class ComPusher : public frc::Command {
  public:

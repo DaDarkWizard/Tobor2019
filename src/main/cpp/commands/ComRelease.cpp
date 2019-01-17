@@ -5,40 +5,41 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "commands/ComGrab.h"
+#include "commands/ComRelease.h"
 
-ComGrab::ComGrab() {
+ComRelease::ComRelease() 
+{
   // Use Requires() here to declare subsystem dependencies
   // eg. Requires(Robot::chassis.get());
 }
 
 // Called just before this Command runs the first time
-void ComGrab::Initialize() 
+void ComRelease::Initialize() 
 {
-  Robot::grabber->Grab();
+  Robot::grabber->Release();
 }
 
 // Called repeatedly when this Command is scheduled to run
-void ComGrab::Execute() 
+void ComRelease::Execute() 
 {
 
 }
 
 // Make this return true when this Command no longer needs to run execute()
-bool ComGrab::IsFinished() 
+bool ComRelease::IsFinished() 
 {
   return true; 
 }
 
 // Called once after isFinished returns true
-void ComGrab::End() 
+void ComRelease::End() 
 {
 
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
-void ComGrab::Interrupted() 
+void ComRelease::Interrupted() 
 {
   End();
 }

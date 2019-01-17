@@ -10,11 +10,11 @@
 #include <frc/commands/Command.h>
 #include <wpilib.h>
 #include <OI.h>
-#include "../subsystem/TowerRock.h"
+#include "../subsystem/Grabber.h"
 
-class ComTowerIn : public frc::Command {
+class ComRelease : public frc::Command {
  public:
-  ComTowerIn();
+  ComRelease();
   void Initialize() override;
   void Execute() override;
   bool IsFinished() override;
