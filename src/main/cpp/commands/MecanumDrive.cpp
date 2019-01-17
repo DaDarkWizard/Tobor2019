@@ -15,7 +15,7 @@ void MecanumDrive::Initialize()
 
 void MecanumDrive::Execute() 
 {
-  double speedWheel = (Robot::OI->YokeWheel());
+  double speedWheel = (&Robot::OI->YokeWheel());
   speedwheel = (speedwheel * 0.375);
   speedwheel = (speedwheel + 0.625);
   &Robot::driveTrain->MecanumDrive((&Robot::OI->XboxHorzR() * speedwheel), 
