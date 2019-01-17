@@ -3,12 +3,12 @@
 
 ComGrab::ComGrab() 
 {
-  // eg. Requires(Robot::chassis.get());
+  Requires(&Robot::grabber);
 }
 
 void ComGrab::Initialize() 
 {
-  Robot::grabber->Grab();
+  &Robot::grabber->Grab();
 }
 
 void ComGrab::Execute() 

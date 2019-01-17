@@ -3,7 +3,7 @@
 
 ComRelease::ComRelease() 
 {
-  // eg. Requires(Robot::chassis.get());
+  Requires(&Robot::grabber);
 }
 
 void ComRelease::Initialize() 
