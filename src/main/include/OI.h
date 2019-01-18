@@ -3,8 +3,6 @@
 
 #include <frc/WPILib.h>
 
-#include <Robot.h>
-
 #include "commands/BallCommandIn.h"
 
 class OI
