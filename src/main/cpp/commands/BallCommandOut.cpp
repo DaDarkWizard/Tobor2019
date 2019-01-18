@@ -1,10 +1,9 @@
 
 #include "commands/BallCommandOut.h"
-#include <subsystems/BallControl.h>
 
 BallCommandOut::BallCommandOut()
 {
-  Requires(&Robot::ballControl);
+  //Requires(Robot::ballControl);
 }
 
 void BallCommandOut::Initialize() 
@@ -24,7 +23,7 @@ bool BallCommandOut::IsFinished()
 
 void BallCommandOut::End() 
 {
-  //Robot::ballControl.StopVictor1();
+  //Robot::ballControl->StopVictor1();
 }
 
 void BallCommandOut::Interrupted() 
