@@ -15,12 +15,12 @@ void MecanumDrive::Initialize()
 
 void MecanumDrive::Execute() 
 {
-  double speedWheel = (&Robot::m_oi->YokeWheel());
-  speedwheel = (speedwheel * 0.375);
-  speedwheel = (speedwheel + 0.625);
-  &Robot::driveTrain->MecanumDrive((&Robot::m_oi->XboxHorzR() * speedwheel), 
-                                  (&Robot::m_oi->XboxVertR() * speedwheel), 
-                                  (&Robot::m_oi->XboxHorzL() * speedwheel));
+  double speedWheel = (Robot::m_oi->YokeWheel());
+  speedWheel = (speedWheel * 0.375);
+  speedWheel = (speedWheel + 0.625);
+  Robot::driveTrain->MecanumDrive((Robot::m_oi->XboxHorzR() * speedWheel), 
+                                  (Robot::m_oi->XboxVertR() * speedWheel), 
+                                  (Robot::m_oi->XboxHorzL() * speedWheel));
 }
 
 bool MecanumDrive::IsFinished() 
@@ -30,7 +30,7 @@ bool MecanumDrive::IsFinished()
 
 void MecanumDrive::End() 
 {
-  &Robot::driveTrain->StopMecanums();
+  Robot::driveTrain->StopMecanums();
 }
 
 void MecanumDrive::Interrupted() 
