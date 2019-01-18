@@ -5,12 +5,12 @@
 
 OI::OI()
 {
-    frc::Joystick yoke{0};
-    frc::Joystick xbox{1};
+    //frc::Joystick yoke{0};
+    //frc::Joystick xbox{1};
     //xboxRB.ToggleWhenPressed(new BallCommandIn);
     //xboxLB.ToggleWhenPressed(new BallCommandOut);
 }
-
+/*
 double OI::XboxVertL()
 {
     return (xbox.GetRawAxis(1) * -1);
@@ -44,4 +44,4 @@ double OI::YokeHorz()
 double OI::YokeWheel()
 {
     return (yoke.GetRawAxis(2) * -1);
-}
+}*/

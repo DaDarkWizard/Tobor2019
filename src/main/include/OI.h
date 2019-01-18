@@ -18,7 +18,7 @@ class OI
     
 public:
     OI();
-
+/*
     double XboxVertL();
     double XboxHorzL();
     double XboxVertR();
@@ -27,6 +27,6 @@ public:
     double YokeVert();
     double YokeHorz();
     double YokeWheel();
-
+*/
 
 };
