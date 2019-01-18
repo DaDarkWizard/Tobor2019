@@ -13,7 +13,7 @@ void BallCommandIn::Initialize()
 
 void BallCommandIn::Execute() 
 {
-  Robot::ballControl->Victor1(0.25);
+  Robot::ballControl.Victor1(0.25);
 }
 
 bool BallCommandIn::IsFinished() 
@@ -23,7 +23,7 @@ bool BallCommandIn::IsFinished()
 
 void BallCommandIn::End() 
 {
-  Robot::ballControl->StopVictor1();
+  Robot::ballControl.StopVictor1();
 }
 
 void BallCommandIn::Interrupted() 
