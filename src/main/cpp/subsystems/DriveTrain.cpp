@@ -18,7 +18,7 @@ void DriveTrain::MecanumDrive(double X, double Y, double Twist)
 
 void DriveTrain::StopMecanums()
 {
-  RobotMap::Mecanum->DriveCartesian(0, 0, 0);
+  RobotMap::Mecanums->DriveCartesian(0, 0, 0);
 }
 
 void DriveTrain::Talon1(double speed)
