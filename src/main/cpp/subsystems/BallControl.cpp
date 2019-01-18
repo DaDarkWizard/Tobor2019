@@ -1,5 +1,5 @@
 
-#include "../subsystems/BallControl.h"
+#include <subsystems/BallControl.h>
 
 BallControl::BallControl() : Subsystem("ExampleSubsystem") 
 {
