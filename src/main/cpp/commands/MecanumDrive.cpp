@@ -5,7 +5,7 @@
 
 MecanumDrive::MecanumDrive() 
 {
-  Requires(&Robot::driveTrain);
+  //Requires(&Robot::driveTrain);
 }
 
 void MecanumDrive::Initialize()
