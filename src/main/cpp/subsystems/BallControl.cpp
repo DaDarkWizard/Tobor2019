@@ -1,4 +1,4 @@
-
+/*
 #include "../subsystems/BallControl.h"
 
 BallControl::BallControl() : Subsystem("ExampleSubsystem") 
@@ -19,4 +19,4 @@ void StopVictor1()
 void Victor1(double speed)
 {
   RobotMap::Victor1->Set(speed);
-}
+}*/

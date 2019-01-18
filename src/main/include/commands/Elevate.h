@@ -1,4 +1,4 @@
-
+/*
 #pragma once
 
 #include <frc/commands/Command.h>
@@ -24,3 +24,4 @@ class Elevate : public frc::Command
   void Interrupted() override;
   void SmallTilt() override;
 };
+*/

@@ -1,4 +1,4 @@
-
+/*
 #pragma once
 
 #include <frc/commands/Command.h>
@@ -22,3 +22,4 @@ class BallCommandOut : public frc::Command
   void End() override;
   void Interrupted() override;
 };
+*/

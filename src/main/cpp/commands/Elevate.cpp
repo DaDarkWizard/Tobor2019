@@ -1,4 +1,4 @@
-
+/*
 #include "commands/Elevate.h"
 
 Elevate::Elevate() 
@@ -36,4 +36,4 @@ void Elevate::End()
 void Elevate::Interrupted() 
 {
   End();
-}
+}*/

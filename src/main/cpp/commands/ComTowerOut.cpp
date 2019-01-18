@@ -1,4 +1,4 @@
-
+/*
 #include "commands/ComTowerOut.h"
 
 ComTowerOut::ComTowerOut() 
@@ -30,3 +30,4 @@ void ComTowerOut::Interrupted()
 {
   End();
 }
+*/

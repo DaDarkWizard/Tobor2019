@@ -1,4 +1,4 @@
-
+/*
 #include "commands/BallCommandOut.h"
 
 BallCommandOut::BallCommandOut()
@@ -30,3 +30,4 @@ void BallCommandOut::Interrupted()
 {
   End();
 }
+*/

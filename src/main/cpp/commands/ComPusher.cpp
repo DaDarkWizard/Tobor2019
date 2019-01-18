@@ -1,4 +1,4 @@
-
+/*
 #include "commands/ComPusher.h"
 
 double waitTime = 0;
@@ -38,3 +38,4 @@ void ComPusher::Interrupted()
 {
 
 }
+*/

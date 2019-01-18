@@ -1,4 +1,4 @@
-
+/*
 #include "commands/ComRelease.h"
 
 ComRelease::ComRelease() 
@@ -30,3 +30,4 @@ void ComRelease::Interrupted()
 {
   End();
 }
+*/
