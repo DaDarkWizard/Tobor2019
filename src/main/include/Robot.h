@@ -22,7 +22,7 @@
 class Robot : public frc::TimedRobot
 {
  public:
-  
+  static OI m_oi;
   static ExampleSubsystem m_subsystem;
   static DriveTrain driveTrain;
   /*static BallControl ballControl;
@@ -31,7 +31,7 @@ class Robot : public frc::TimedRobot
   static TowerRock towerRock;
   static Elevator elevator;*/
 
-  static OI m_oi;
+
 
   void RobotInit() override;
   void RobotPeriodic() override;
