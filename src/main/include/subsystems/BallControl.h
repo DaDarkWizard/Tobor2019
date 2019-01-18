@@ -1,4 +1,4 @@
-/*
+
 #pragma once
 
 #include <frc/commands/Subsystem.h>
@@ -15,4 +15,3 @@ class BallControl : public frc::Subsystem
   void StopVictor1();
   void Victor1(double speed);
 };
-*/

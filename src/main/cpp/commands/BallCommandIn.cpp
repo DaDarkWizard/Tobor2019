@@ -1,4 +1,4 @@
-/*
+
 #include "commands/BallCommandIn.h"
 
 BallCommandIn::BallCommandIn()
@@ -30,4 +30,3 @@ void BallCommandIn::Interrupted()
 {
   End();
 }
-*/
