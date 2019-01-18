@@ -1,5 +1,6 @@
 
 #include "commands/BallCommandIn.h"
+#include <subsystems/BallControl.h>
 
 BallCommandIn::BallCommandIn()
 {

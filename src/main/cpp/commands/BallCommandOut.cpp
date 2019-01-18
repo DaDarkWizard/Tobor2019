@@ -1,5 +1,6 @@
 
 #include "commands/BallCommandOut.h"
+#include <subsystems/BallControl.h>
 
 BallCommandOut::BallCommandOut()
 {
