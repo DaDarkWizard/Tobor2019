@@ -11,6 +11,13 @@ std::shared_ptr<frc::VictorSP> RobotMap::Victor2;
 
 std::shared_ptr<frc::MecanumDrive> RobotMap::Mecanums;
 
+std::shared_ptr<frc::Solenoid> RobotMap::TowerIn;
+std::shared_ptr<frc::Solenoid> RobotMap::TowerOut;
+std::shared_ptr<frc::Solenoid> RobotMap::Push;
+std::shared_ptr<frc::Solenoid> RobotMap::Pull;
+std::shared_ptr<frc::Solenoid> RobotMap::Grab;
+std::shared_ptr<frc::Solenoid> RobotMap::Release;
+
 void RobotMap::Init()
 {
     Talon1.reset(new WPI_TalonSRX(1));
