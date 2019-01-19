@@ -8,7 +8,7 @@ ComTowerOut::ComTowerOut()
 
 void ComTowerOut::Initialize() 
 {
-  &Robot::towerRock->TowerOut();
+  Robot::towerRock.TowerOut();
 }
 
 void ComTowerOut::Execute() 

@@ -8,7 +8,7 @@ ComGrab::ComGrab()
 
 void ComGrab::Initialize() 
 {
-  &Robot::grabber->Grab();
+  Robot::grabber->Grab();
 }
 
 void ComGrab::Execute() 
