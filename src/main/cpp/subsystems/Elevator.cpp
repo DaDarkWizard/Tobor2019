@@ -11,17 +11,17 @@ void Elevator::InitDefaultCommand()
 
 }
 
-void StopVictor2();
+void Elevator::StopVictor2();
 {
   RobotMap::Victor2->Set(0);
 }
 
-void Victor2();
+void Elevator::Victor2();
 {
   RobotMap::Victor2->Set(speed);
 }
 
-void Hover();
+void Elevator::Hover();
 {
   RobotMap::Victor2->Set(0.05);
 }*/

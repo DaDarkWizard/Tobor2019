@@ -5,7 +5,6 @@
 
 MecanumDrive::MecanumDrive() : frc::Command("MecanumDrive")
 {
-
   Requires(&Robot::driveTrain);
 }
 
