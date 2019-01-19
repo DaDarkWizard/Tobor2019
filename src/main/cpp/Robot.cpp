@@ -8,7 +8,7 @@
 ExampleSubsystem Robot::m_subsystem;
 DriveTrain Robot::driveTrain;
 BallControl Robot::ballControl;
-//Grabber Robot::grabber;
+Grabber Robot::grabber;
 //Pusher Robot::pusher;
 //TowerRock Robot::towerRock;
 Elevator Robot::elevator;
