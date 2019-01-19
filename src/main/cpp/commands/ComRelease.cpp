@@ -1,7 +1,9 @@
-/*
+
 #include "commands/ComRelease.h"
 
-ComRelease::ComRelease() 
+#include <Robot.h>
+
+ComRelease::ComRelease() : frc::Command("ComRelease")
 {
   Requires(&Robot::grabber);
 }
@@ -30,4 +32,3 @@ void ComRelease::Interrupted()
 {
   End();
 }
-*/

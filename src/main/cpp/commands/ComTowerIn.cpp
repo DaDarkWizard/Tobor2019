@@ -1,6 +1,8 @@
 
 #include "commands/ComTowerIn.h"
 
+#include <Robot.h>
+
 ComTowerIn::ComTowerIn() 
 {
   Requires(&Robot::towerRock);

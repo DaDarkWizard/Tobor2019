@@ -1,16 +1,20 @@
 
 #pragma once
 
-#include <frc/commands/Subsystem.h>
 #include <RobotMap.h>
+
+#include <frc/WPILib.h>
+
+#include <frc/commands/Subsystem.h>
 
 class TowerRock : public frc::Subsystem 
 {
  public:
   
-  TowerRock();
-  void InitDefaultCommand() override;
-
   void TowerOut();
   void TowerIn();
+
+  void InitDefaultCommand() override;
+
+  TowerRock();
 };
