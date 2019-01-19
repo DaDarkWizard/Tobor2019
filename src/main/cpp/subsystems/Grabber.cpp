@@ -1,4 +1,4 @@
-/*
+
 #include "subsystems/Grabber.h"
 
 Grabber::Grabber() : Subsystem("ExampleSubsystem") 
@@ -19,4 +19,4 @@ void Grabber::Grab()
 void Grabber::Release()
 {
 	RobotMap::Release->StartPulse();
-}*/
+}
