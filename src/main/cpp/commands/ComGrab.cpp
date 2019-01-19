@@ -1,14 +1,16 @@
 
 #include "commands/ComGrab.h"
 
-ComGrab::ComGrab() 
+#include <Robot.h>
+
+ComGrab::ComGrab() : frc::Command("ComGrab")
 {
   Requires(&Robot::grabber);
 }
 
 void ComGrab::Initialize() 
 {
-  Robot::grabber->Grab();
+  Robot::grabber.Grab();
 }
 
 void ComGrab::Execute() 
