@@ -11,7 +11,7 @@ ComPusher::ComPusher()
 
 void ComPusher::Initialize() 
 {
-  &Robot::pusher->Push();
+  Robot::pusher.Push();
   waitTime = Timer.get();
 }
 
@@ -19,7 +19,7 @@ void ComPusher::Execute()
 {
   if ((Timer.get() - waitTime) > 5.0)
   {
-    &Robot::pusher->Pull();
+    Robot::pusher.Pull();
     isDone = true;
   }
 }

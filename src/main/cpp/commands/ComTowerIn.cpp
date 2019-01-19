@@ -8,7 +8,7 @@ ComTowerIn::ComTowerIn()
 
 void ComTowerIn::Initialize() 
 {
-  &Robot::towerRock->TowerIn();
+  Robot::towerRock.TowerIn();
 }
 
 void ComTowerIn::Execute() 
