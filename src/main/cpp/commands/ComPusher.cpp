@@ -1,10 +1,14 @@
-/*
+
 #include "commands/ComPusher.h"
+
+#include <Robot.h>
+
+#include <frc/WPILib.h>
 
 double waitTime = 0;
 bool isDone = false;
 
-ComPusher::ComPusher() 
+ComPusher::ComPusher() : frc::Command("ComPusher")
 {
   Requires(&Robot::pusher);
 }
@@ -12,12 +16,12 @@ ComPusher::ComPusher()
 void ComPusher::Initialize() 
 {
   Robot::pusher.Push();
-  waitTime = Timer.get();
+  double waitTime = frc::Timer().Get();
 }
 
 void ComPusher::Execute() 
 {
-  if ((Timer.get() - waitTime) > 5.0)
+  if ((frc::Timer().Get() - waitTime) > 5.0)
   {
     Robot::pusher.Pull();
     isDone = true;
@@ -38,4 +42,3 @@ void ComPusher::Interrupted()
 {
 
 }
-*/

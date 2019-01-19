@@ -1,15 +1,7 @@
-/*
+
 #pragma once
 
 #include <frc/commands/Command.h>
-
-#include <frc/WPILib.h>
-
-#include <OI.h>
-
-#include "../subsystems/Pusher.h"
-
-#include <Robot.h>
 
 class ComPusher : public frc::Command 
 {
@@ -22,4 +14,3 @@ class ComPusher : public frc::Command
   void End() override;
   void Interrupted() override;
 };
-*/

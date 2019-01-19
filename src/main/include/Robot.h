@@ -15,7 +15,7 @@
 #include "subsystems/DriveTrain.h"
 #include "subsystems/BallControl.h"
 #include "subsystems/Grabber.h"
-//#include "subsystems/TowerRock.h"
+#include "subsystems/TowerRock.h"
 #include "subsystems/Pusher.h"
 #include "subsystems/Elevator.h"
 
@@ -28,7 +28,7 @@ class Robot : public frc::TimedRobot
   static BallControl ballControl;
   static Grabber grabber;
   static Pusher pusher;
-  //static TowerRock towerRock;
+  static TowerRock towerRock;
   static Elevator elevator;
 
  private:

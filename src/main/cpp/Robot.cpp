@@ -10,7 +10,7 @@ DriveTrain Robot::driveTrain;
 BallControl Robot::ballControl;
 Grabber Robot::grabber;
 Pusher Robot::pusher;
-//TowerRock Robot::towerRock;
+TowerRock Robot::towerRock;
 Elevator Robot::elevator;
 
 OI Robot::m_oi;
