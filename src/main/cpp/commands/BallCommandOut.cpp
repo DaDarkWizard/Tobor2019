@@ -1,6 +1,5 @@
 
 #include "commands/BallCommandOut.h"
-
 #include <Robot.h>
 
 BallCommandOut::BallCommandOut() : frc::Command("BallCommandOut")
@@ -25,7 +24,7 @@ bool BallCommandOut::IsFinished()
 
 void BallCommandOut::End() 
 {
-  //Robot::ballControl.StopVictor1();
+  Robot::ballControl.StopVictor1();
 }
 
 void BallCommandOut::Interrupted() 
