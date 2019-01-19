@@ -1,14 +1,7 @@
-/*
+
 #pragma once
 
 #include <frc/commands/Command.h>
-
-#include <frc/WPILib.h>
-
-#include <OI.h>
-
-#include "../subsystems/Grabber.h"
-#include <Robot.h>
 
 class ComGrab : public frc::Command 
 {
@@ -21,4 +14,3 @@ class ComGrab : public frc::Command
   void End() override;
   void Interrupted() override;
 };
-*/

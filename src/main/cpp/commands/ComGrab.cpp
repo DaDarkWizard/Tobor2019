@@ -1,4 +1,4 @@
-/*
+
 #include "commands/ComGrab.h"
 
 ComGrab::ComGrab() 
@@ -30,4 +30,3 @@ void ComGrab::Interrupted()
 {
   End();
 }
-*/
