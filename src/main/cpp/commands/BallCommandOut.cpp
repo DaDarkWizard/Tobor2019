@@ -3,7 +3,7 @@
 
 #include <Robot.h>
 
-BallCommandOut::BallCommandOut()
+BallCommandOut::BallCommandOut() : frc::Command("BallCommandOut")
 {
   Requires(&Robot::ballControl);
 }
