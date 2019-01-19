@@ -1,4 +1,4 @@
-/*
+
 #pragma once
 
 #include <frc/commands/Subsystem.h>
@@ -11,11 +11,11 @@ class Elevator : public frc::Subsystem
 {
  public:
 
-  Elevator();
-  void InitDefaultCommand() override;
 
   void StopVictor2();
   void Victor2(double speed);
   void Hover();
+  
+  Elevator();
+  void InitDefaultCommand() override;
 };
-*/

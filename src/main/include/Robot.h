@@ -8,8 +8,8 @@
 #include "OI.h"
 #include "commands/ExampleCommand.h"
 #include "commands/MyAutoCommand.h"
-//#include "commands/BallCommandIn.h"
-//#include "commands/BallCommandOut.h"
+#include "commands/BallCommandIn.h"
+#include "commands/BallCommandOut.h"
 
 #include "subsystems/ExampleSubsystem.h"
 #include "subsystems/DriveTrain.h"
@@ -17,7 +17,7 @@
 //#include "subsystems/Grabber.h"
 //#include "subsystems/TowerRock.h"
 //#include "subsystems/Pusher.h"
-//#include "subsystems/Elevator.h"
+#include "subsystems/Elevator.h"
 
 class Robot : public frc::TimedRobot
 {
@@ -29,7 +29,7 @@ class Robot : public frc::TimedRobot
   //static Grabber grabber;
   //static Pusher pusher;
   //static TowerRock towerRock;
-  //static Elevator elevator;
+  static Elevator elevator;
 
  private:
 
