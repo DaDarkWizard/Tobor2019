@@ -1,15 +1,7 @@
 
 #pragma once
 
-#include <frc/WPILib.h>
-
 #include <frc/commands/Command.h>
-
-#include "../subsystems/DriveTrain.h"
-
-#include <OI.h>
-
-#include <Robot.h>
 
 class MecanumDrive : public frc::Command 
 {

@@ -25,13 +25,13 @@ class Robot : public frc::TimedRobot
   static OI m_oi;
   static ExampleSubsystem m_subsystem;
   static DriveTrain driveTrain;
-  static BallControl *ballControl;
+  static BallControl ballControl;
   //static Grabber grabber;
   //static Pusher pusher;
   //static TowerRock towerRock;
   //static Elevator elevator;
 
-
+ private:
 
   void RobotInit() override;
   void RobotPeriodic() override;
@@ -43,7 +43,7 @@ class Robot : public frc::TimedRobot
   void TeleopPeriodic() override;
   void TestPeriodic() override;
 
- private:
+
   
   frc::Command* m_autonomousCommand = nullptr;
   ExampleCommand m_defaultAuto;
