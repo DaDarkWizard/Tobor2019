@@ -3,7 +3,7 @@
 
 #include <frc/commands/Command.h>
 
-class MecanumDrive : public frc::Command 
+class MecanumDrive : public frc::Command
 {
  public:
 

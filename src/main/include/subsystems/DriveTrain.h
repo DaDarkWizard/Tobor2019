@@ -11,7 +11,7 @@ class DriveTrain : public frc::Subsystem
 {
  public:
 
-  void MecanumDrive(double X, double Y, double Twist);
+  void DriveUsingMecanums(double X, double Y, double Twist);
   void StopMecanums();
   void Talon1(double speed);
   void Talon2(double speed);

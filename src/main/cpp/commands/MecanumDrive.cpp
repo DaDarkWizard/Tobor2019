@@ -18,7 +18,7 @@ void MecanumDrive::Execute()
   double speedWheel = (Robot::m_oi.YokeWheel());
   speedWheel = (speedWheel * 0.375);
   speedWheel = (speedWheel + 0.625);
-  Robot::driveTrain.MecanumDrive((Robot::m_oi.XboxHorzR() * speedWheel), 
+  Robot::driveTrain.DriveUsingMecanums((Robot::m_oi.XboxHorzR() * speedWheel), 
                                   (Robot::m_oi.XboxVertR() * speedWheel), 
                                   (Robot::m_oi.XboxHorzL() * speedWheel));
 }

@@ -3,12 +3,15 @@
 
 #include <frc/WPILib.h>
 
+#include <commands/BallCommandIn.h>
+#include <commands/BallCommandOut.h>
+
 OI::OI()
 {
     frc::Joystick yoke{0};
     frc::Joystick xbox{1};
-    //xboxRB.ToggleWhenPressed(new BallCommandIn);
-    //xboxLB.ToggleWhenPressed(new BallCommandOut);
+    xboxRB.ToggleWhenPressed(new BallCommandIn);
+    xboxLB.ToggleWhenPressed(new BallCommandOut);
 }
 
 double OI::XboxVertL()

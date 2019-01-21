@@ -1,17 +1,17 @@
 
-#include "subsystems/DriveTrain.h"
-
-DriveTrain::DriveTrain() : Subsystem("ExampleSubsystem") 
+#include <subsystems/DriveTrain.h>
+#include <commands/MecanumDrive.h>
+DriveTrain::DriveTrain() : frc::Subsystem("DriveTrain") 
 {
   
 }
 
 void DriveTrain::InitDefaultCommand()
 {
-
+  SetDefaultCommand(new MecanumDrive());
 }
 
-void DriveTrain::MecanumDrive(double X, double Y, double Twist)
+void DriveTrain::DriveUsingMecanums(double X, double Y, double Twist)
 {
   RobotMap::Mecanums->DriveCartesian(X, Y, Twist);
 }

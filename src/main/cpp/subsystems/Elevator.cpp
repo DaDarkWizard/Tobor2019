@@ -1,5 +1,6 @@
 
 #include <subsystems/Elevator.h>
+#include <commands/Elevate.h>
 
 Elevator::Elevator() : Subsystem("ExampleSubsystem") 
 {
@@ -8,7 +9,7 @@ Elevator::Elevator() : Subsystem("ExampleSubsystem")
 
 void Elevator::InitDefaultCommand()
 {
-
+  SetDefaultCommand(new Elevate());
 }
 
 void Elevator::StopVictor2()
