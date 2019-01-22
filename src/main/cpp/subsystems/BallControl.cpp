@@ -8,7 +8,7 @@ BallControl::BallControl() : Subsystem("ExampleSubsystem")
 
 void BallControl::InitDefaultCommand() 
 {
-  
+
 }
 
 void BallControl::StopVictor1()
