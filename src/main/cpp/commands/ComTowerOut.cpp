@@ -30,4 +30,3 @@ void ComTowerOut::Interrupted()
 {
   End();
 }
-*/
