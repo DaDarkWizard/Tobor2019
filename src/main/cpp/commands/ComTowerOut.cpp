@@ -1,4 +1,4 @@
-/*
+
 #include "commands/ComTowerOut.h"
 
 ComTowerOut::ComTowerOut() 
