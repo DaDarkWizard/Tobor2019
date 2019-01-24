@@ -19,7 +19,7 @@ void Elevator::StopVictor2()
 
 void Elevator::RunVictor2(double speed)
 {
-  RobotMap::Victor2->Set(speed);
+  //RobotMap::Victor2->Set(speed);
 }
 
 void Elevator::Hover()
