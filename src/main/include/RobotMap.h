@@ -10,16 +10,15 @@ class RobotMap
 public:
     
     static void Init();
-    
     static std::shared_ptr<WPI_TalonSRX> Talon1;
     static std::shared_ptr<WPI_TalonSRX> Talon2;
     static std::shared_ptr<WPI_TalonSRX> Talon3;
     static std::shared_ptr<WPI_TalonSRX> Talon4;
 
     static std::shared_ptr<frc::MecanumDrive> Mecanums;
-
-    frc::VictorSP Victor1{0};
-    frc::VictorSP Victor2{1};
+    
+    static std::shared_ptr<frc::VictorSP> Victor1;
+    static std::shared_ptr<frc::VictorSP> Victor2;
     
     static std::shared_ptr<frc::Solenoid> TowerIn;
     static std::shared_ptr<frc::Solenoid> TowerOut;
