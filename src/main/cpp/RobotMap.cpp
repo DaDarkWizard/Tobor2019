@@ -6,8 +6,8 @@ std::shared_ptr<WPI_TalonSRX> RobotMap::Talon2;
 std::shared_ptr<WPI_TalonSRX> RobotMap::Talon3;
 std::shared_ptr<WPI_TalonSRX> RobotMap::Talon4;
 
-std::shared_ptr<frc::VictorSP> RobotMap::Victor1;
-std::shared_ptr<frc::VictorSP> RobotMap::Victor2;
+frc::VictorSP RobotMap::Victor1;
+frc::VictorSP RobotMap::Victor2;
 
 std::shared_ptr<frc::MecanumDrive> RobotMap::Mecanums;
 
