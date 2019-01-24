@@ -12,7 +12,7 @@ class BallControl : public frc::Subsystem
  public:
 
   void StopVictor1();
-  void Victor1(double speed);
+  void RunVictor1(double speed);
   
   void InitDefaultCommand() override;
   BallControl();

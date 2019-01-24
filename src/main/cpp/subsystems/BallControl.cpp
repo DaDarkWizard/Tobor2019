@@ -16,7 +16,7 @@ void BallControl::StopVictor1()
   RobotMap::Victor1.Set(0);
 }
 
-void BallControl::Victor1(double speed)
+void BallControl::RunVictor1(double speed)
 {
   RobotMap::Victor1.Set(speed);
 }

@@ -13,7 +13,7 @@ class Elevator : public frc::Subsystem
 
 
   void StopVictor2();
-  void Victor2(double speed);
+  void RunVictor2(double speed);
   void Hover();
   
   Elevator();
