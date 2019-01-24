@@ -17,11 +17,11 @@ void Elevate::Execute()
 {
   if ((Robot::m_oi.YokeVert() <= 0.1) && (Robot::m_oi.YokeVert() >= -0.1))
   {
-    Robot::elevator.Victor2(0.05);
+    Robot::elevator.RunVictor2(0.05);
   }
   else
   {
-    Robot::elevator.Victor2(Robot::m_oi.YokeVert());
+    Robot::elevator.RunVictor2(Robot::m_oi.YokeVert());
   }
 }
 

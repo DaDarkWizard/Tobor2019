@@ -14,15 +14,15 @@ void Elevator::InitDefaultCommand()
 
 void Elevator::StopVictor2()
 {
-  RobotMap::Victor2.Set(0);
+  RobotMap::Victor2->Set(0);
 }
 
 void Elevator::RunVictor2(double speed)
 {
-  RobotMap::Victor2.Set(speed);
+  RobotMap::Victor2->Set(speed);
 }
 
 void Elevator::Hover()
 {
-  RobotMap::Victor2.Set(0.05);
+  RobotMap::Victor2->Set(0.05);
 }

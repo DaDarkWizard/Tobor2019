@@ -13,10 +13,10 @@ void BallControl::InitDefaultCommand()
 
 void BallControl::StopVictor1()
 {
-  RobotMap::Victor1.Set(0);
+  RobotMap::Victor1->Set(0);
 }
 
 void BallControl::RunVictor1(double speed)
 {
-  RobotMap::Victor1.Set(speed);
+  RobotMap::Victor1->Set(speed);
 }
