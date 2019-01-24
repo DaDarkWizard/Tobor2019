@@ -18,8 +18,8 @@ public:
 
     static std::shared_ptr<frc::MecanumDrive> Mecanums;
 
-    static frc::VictorSP Victor1;
-    static frc::VictorSP Victor2;
+    frc::VictorSP Victor1{0};
+    frc::VictorSP Victor2{1};
     
     static std::shared_ptr<frc::Solenoid> TowerIn;
     static std::shared_ptr<frc::Solenoid> TowerOut;
