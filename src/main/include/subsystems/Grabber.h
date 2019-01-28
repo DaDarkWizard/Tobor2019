@@ -1,6 +1,7 @@
 
 #pragma once
 
+//Includes the frc subsystems folder
 #include <frc/commands/Subsystem.h>
 #include <RobotMap.h>
 
@@ -8,10 +9,13 @@ class Grabber : public frc::Subsystem
 {
  public:
 
+  //Making functions Grab & Release.
   void Grab();
 	void Release();
 
-  void InitDefaultCommand() override;
-
+  //???
   Grabber();
+
+  //???
+  void InitDefaultCommand() override;
 };
