@@ -9,7 +9,7 @@ frc::Solenoid pullSolenoid {5};
 //a function that runs once when the pusher object is made
 Pusher::Pusher() : Subsystem("ExampleSubsystem") 
 {
-	//sets how long a pulse lasts for
+	//sets a pulse to last for 0.1 seconds
 	pushSolenoid.setPulseDuration(0.1);
 	pullSolenoid.setPulseDuration(0.1);
 }
@@ -19,13 +19,16 @@ void Pusher::InitDefaultCommand()
 
 }
 
-//starts the pulse
+//creates a function to push the pusher out
 void Pusher::Push()
 {
+	//runs the start pulse function from the push solenoid object
 	pushSolenoid.StartPulse();
 }
 
+//creates a function to pull the pusher in
 void Pusher::Pull()
 {
+	//runs the start pulse function from the push solenoid object
 	pushSolenoid.StartPulse();
 }
