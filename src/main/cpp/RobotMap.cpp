@@ -13,8 +13,8 @@
 
 std::shared_ptr<frc::Solenoid> RobotMap::TowerIn;
 std::shared_ptr<frc::Solenoid> RobotMap::TowerOut;
-std::shared_ptr<frc::Solenoid> RobotMap::Push;
-std::shared_ptr<frc::Solenoid> RobotMap::Pull;
+//std::shared_ptr<frc::Solenoid> RobotMap::Push;
+//std::shared_ptr<frc::Solenoid> RobotMap::Pull;
 std::shared_ptr<frc::Solenoid> RobotMap::Grab;
 std::shared_ptr<frc::Solenoid> RobotMap::Release;
 
@@ -40,17 +40,18 @@ void RobotMap::Init()
 
     Victor1.
     frc::VictorSP RobotMap::Victor1{0};*/
+    
     TowerOut.reset(new frc::Solenoid(0));
 	TowerIn.reset(new frc::Solenoid(1));
 	Grab.reset(new frc::Solenoid(2));
 	Release.reset(new frc::Solenoid(3));
-	Push.reset(new frc::Solenoid(4));
-	Pull.reset(new frc::Solenoid(5));
+	//Push.reset(new frc::Solenoid(4));
+	//Pull.reset(new frc::Solenoid(5));
 
     TowerOut->SetPulseDuration(.1);
 	TowerIn->SetPulseDuration(.1);
 	Grab->SetPulseDuration(.1);
 	Release->SetPulseDuration(.1);
-	Push->SetPulseDuration(.1);
-	Pull->SetPulseDuration(.1);
+	//Push->SetPulseDuration(.1);
+	//Pull->SetPulseDuration(.1);
 }

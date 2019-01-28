@@ -1,4 +1,6 @@
 
+//Worthless piece of junk that took forever to code didn't work anyway
+
 #pragma once
 
 #include <frc/WPILib.h>
@@ -24,6 +26,6 @@ public:
     static std::shared_ptr<frc::Solenoid> TowerOut;
     static std::shared_ptr<frc::Solenoid> Push;
     static std::shared_ptr<frc::Solenoid> Pull;
-    static std::shared_ptr<frc::Solenoid> Grab;
-    static std::shared_ptr<frc::Solenoid> Release;
+    //static std::shared_ptr<frc::Solenoid> Grab;
+    //static std::shared_ptr<frc::Solenoid> Release;
 };
