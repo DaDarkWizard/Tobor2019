@@ -6,7 +6,7 @@ frc::Solenoid pushSolenoid {4};
 //creates a solenoid object using frc's solenoid class and attaches it to port 5 on the pcm
 frc::Solenoid pullSolenoid {5};
 
-//pushes
+//a function that runs once when the pusher object is made
 Pusher::Pusher() : Subsystem("ExampleSubsystem") 
 {
 	//sets how long a pulse lasts for
