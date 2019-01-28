@@ -1,6 +1,9 @@
 
 #include "subsystems/TowerRock.h"
 
+frc::Solenoid TowerIn{1};
+frc::Solenoid TowerOut{0};
+
 TowerRock::TowerRock() : Subsystem("ExampleSubsystem") 
 {
   
