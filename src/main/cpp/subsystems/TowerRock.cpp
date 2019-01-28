@@ -6,7 +6,7 @@ frc::Solenoid TowerIn{1};
 //Creates object TowerOut
 frc::Solenoid TowerOut{0}; 
 
-//Sets up function that needs to run only once when this file is initialized
+//Sets up function that needs to run only once when this command is initialized
 TowerRock::TowerRock() : Subsystem("ExampleSubsystem") 
 {
   //Sets how long it takes the solenoid to push the tower
