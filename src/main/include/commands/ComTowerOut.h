@@ -9,6 +9,9 @@
 
 #include "../subsystems/TowerRock.h"
 
+//References the main header file
+#include <Robot.h>
+
 class ComTowerOut : public frc::Command 
 {
  public:

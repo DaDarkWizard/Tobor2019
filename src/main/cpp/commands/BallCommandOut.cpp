@@ -1,6 +1,7 @@
 
 #include "commands/BallCommandOut.h"
 
+//References the main header file
 #include <Robot.h>
 
 BallCommandOut::BallCommandOut() : frc::Command("BallCommandOut")

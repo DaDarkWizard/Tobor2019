@@ -1,7 +1,8 @@
 
 #include "commands/MyAutoCommand.h"
 
-#include "Robot.h"
+//References the main header file
+#include <Robot.h>
 
 MyAutoCommand::MyAutoCommand()
 {
