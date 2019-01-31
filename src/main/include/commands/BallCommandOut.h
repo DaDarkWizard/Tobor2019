@@ -3,6 +3,8 @@
 
 #include <frc/commands/Command.h>
 
+#include <Robot.h>
+
 class BallCommandOut : public frc::Command 
 {
  public:
