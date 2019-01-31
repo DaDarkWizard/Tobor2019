@@ -2,6 +2,9 @@
 //References the header file for this command to be used here
 #include "commands/ComTowerIn.h"
 
+//References the main header file
+#include <Robot.h>
+
 //Sets up the function ComTowerIn()
 ComTowerIn::ComTowerIn() 
 {

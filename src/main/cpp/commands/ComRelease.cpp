@@ -1,6 +1,7 @@
 
 #include "commands/ComRelease.h"
 
+//References the main header file
 #include <Robot.h>
 
 ComRelease::ComRelease() : frc::Command("ComRelease")

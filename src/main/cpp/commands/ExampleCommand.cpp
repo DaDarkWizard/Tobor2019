@@ -1,7 +1,8 @@
 
 #include "commands/ExampleCommand.h"
 
-#include "Robot.h"
+//References the main header file
+#include <Robot.h>
 
 ExampleCommand::ExampleCommand()
 {
