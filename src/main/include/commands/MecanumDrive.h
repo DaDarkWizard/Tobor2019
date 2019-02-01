@@ -3,6 +3,9 @@
 
 #include <frc/commands/Command.h>
 
+//References the main header file
+#include <Robot.h>
+
 class MecanumDrive : public frc::Command
 {
  public:

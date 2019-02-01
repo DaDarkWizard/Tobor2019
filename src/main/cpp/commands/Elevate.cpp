@@ -1,6 +1,7 @@
 
 #include "commands/Elevate.h"
 
+//References the main header file
 #include <Robot.h>
 
 Elevate::Elevate() : frc::Command("Elevate")
