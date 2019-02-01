@@ -4,13 +4,9 @@
 //Includes the frc commands lirary.
 #include <frc/commands/Command.h>
 
-<<<<<<< HEAD
-//???
-=======
 //References the main header file
 #include <Robot.h>
 
->>>>>>> 089c07639c85aa798249013d2464c044cd23cc42
 class ComRelease : public frc::Command 
 {
  public:
