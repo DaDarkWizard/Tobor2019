@@ -1,10 +1,11 @@
 
+//Only includes once
 #pragma once
 
-#include <RobotMap.h>
-
+//Include the WPI data library
 #include <frc/WPILib.h>
 
+//Includes the Subsystem header file
 #include <frc/commands/Subsystem.h>
 
 class TowerRock : public frc::Subsystem 

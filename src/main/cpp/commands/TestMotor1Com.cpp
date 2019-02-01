@@ -1,29 +1,40 @@
-/*----------------------------------------------------------------------------*/
-/* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
-/* Open Source Software - may be modified and shared by FRC teams. The code   */
-/* must be accompanied by the FIRST BSD license file in the root directory of */
-/* the project.                                                               */
-/*----------------------------------------------------------------------------*/
+
 
 #include "commands/TestMotor1Com.h"
 
-TestMotor1Com::TestMotor1Com() {
-  // Use Requires() here to declare subsystem dependencies
-  // eg. Requires(Robot::chassis.get());
+TestMotor1Com::TestMotor1Com() 
+{
+  //Causes testMotor to be needed for the command to run
+  Requires(&Robot::testMotor);
 }
 
 // Called just before this Command runs the first time
-void TestMotor1Com::Initialize() {}
+void TestMotor1Com::Initialize() 
+{
+
+}
 
 // Called repeatedly when this Command is scheduled to run
-void TestMotor1Com::Execute() {}
+void TestMotor1Com::Execute() 
+{
+  Robot::testMotor.RunTestMotor((Robot::m_oi.XboxRT()) + ((&Robot::m_oi.XboxLT()) * -1));
+}
 
 // Make this return true when this Command no longer needs to run execute()
-bool TestMotor1Com::IsFinished() { return false; }
+bool TestMotor1Com::IsFinished() 
+{ 
+  return false; 
+}
 
 // Called once after isFinished returns true
-void TestMotor1Com::End() {}
+void TestMotor1Com::End() 
+{
+  StopTestMotor();
+}
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
-void TestMotor1Com::Interrupted() {}
+void TestMotor1Com::Interrupted()
+{
+  End();
+}

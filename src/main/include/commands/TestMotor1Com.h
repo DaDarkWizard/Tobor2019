@@ -1,14 +1,11 @@
-/*----------------------------------------------------------------------------*/
-/* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
-/* Open Source Software - may be modified and shared by FRC teams. The code   */
-/* must be accompanied by the FIRST BSD license file in the root directory of */
-/* the project.                                                               */
-/*----------------------------------------------------------------------------*/
 
+//Makes it so it only includes once
 #pragma once
 
+//Includes the Command header file
 #include <frc/commands/Command.h>
 
+//Sets up the class TestMotor1Com
 class TestMotor1Com : public frc::Command {
  public:
   TestMotor1Com();

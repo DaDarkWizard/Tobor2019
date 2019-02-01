@@ -48,3 +48,13 @@ double OI::YokeWheel()
 {
     return (yoke.GetRawAxis(2) * -1);
 }
+
+double OI::XboxLT()
+{
+    return xbox.GetRawAxis(3);
+}
+
+double OI::XboxRT()
+{
+    return xbox.GetRawAxis(2);
+}
