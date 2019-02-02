@@ -1,4 +1,5 @@
 
+#include <Robot.h>
 
 #include "commands/TestMotor1Com.h"
 

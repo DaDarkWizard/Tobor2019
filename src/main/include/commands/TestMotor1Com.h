@@ -5,6 +5,8 @@
 //Includes the Command header file
 #include <frc/commands/Command.h>
 
+#include <Robot.h>
+
 //Sets up the class TestMotor1Com
 class TestMotor1Com : public frc::Command {
  public:
