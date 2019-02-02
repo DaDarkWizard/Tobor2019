@@ -26,6 +26,10 @@ class OI
     //Setting up xbox Right joyscick.
     double XboxVertR();
     double XboxHorzR();
+
+    //Setting up the triggers.
+    double XboxRT();
+    double XboxLT();
     
     //Setting up yoke Joystick.
     double YokeVert();

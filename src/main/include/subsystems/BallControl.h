@@ -5,8 +5,6 @@
 
 #include <frc/WPILib.h>
 
-#include <RobotMap.h>
-
 class BallControl : public frc::Subsystem 
 {
  public:

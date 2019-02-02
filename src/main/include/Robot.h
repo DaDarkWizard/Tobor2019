@@ -30,6 +30,7 @@ class Robot : public frc::TimedRobot
   static Pusher pusher;
   static TowerRock towerRock;
   static Elevator elevator;
+  static TestMotor1Sub testMotor;
 
  private:
 
