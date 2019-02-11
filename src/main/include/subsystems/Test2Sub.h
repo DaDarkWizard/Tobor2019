@@ -17,4 +17,5 @@ class Test2Sub : public frc::Subsystem {
  public:
   Test2Sub();
   void InitDefaultCommand() override;
+
 };
